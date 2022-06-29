@@ -1,0 +1,42 @@
+.active {
+  text-decoration: line-through rgb(179, 157, 219) 3px;
+  opacity: 0, 5;
+  color: rgb(179, 157, 219);
+  font-weight: 600;
+}
+
+.react-icon-trash {
+  width: 22px;
+  height: 25px;
+  color: rgb(172, 46, 46);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.trash {
+  background-color: transparent;
+  border: none;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  
+}
+
+.complete-todo {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.action-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
