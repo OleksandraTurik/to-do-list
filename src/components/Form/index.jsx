@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { TiPlusOutline } from "react-icons/ti";
-import {IconContext} from 'react-icons'
+import { IconContext } from "react-icons";
 
-import './style.css'
+import "./style.css";
 
 export default class Form extends Component {
   state = {
@@ -36,10 +36,9 @@ export default class Form extends Component {
             placeholder="Your goal"
           />
           <button className="search-button" type="submit">
-          <IconContext.Provider value={{ className: 'react-icons' }}>
-            <TiPlusOutline />
-          </IconContext.Provider>
-            
+            <IconContext.Provider value={{ className: "react-icons" }}>
+              <TiPlusOutline />
+            </IconContext.Provider>
           </button>
         </form>
       </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Form from "../Form";
-import {RiTodoLine} from "react-icons/ri"
+import { RiTodoLine } from "react-icons/ri";
 import ToDoList from "../ToDoList";
 
 import "./style.css";
@@ -30,7 +30,6 @@ export default class Todos extends Component {
   deleteHandler = (id) => {
     this.setState(({ todoItems }) => {
       const filtredItems = todoItems.filter((item) => item.id !== id);
-
       return {
         todoItems: filtredItems,
       };
@@ -45,7 +44,6 @@ export default class Todos extends Component {
         isDid: false,
       };
       const newArray = [...todoItems, newItem];
-
       return {
         todoItems: newArray,
       };
@@ -54,7 +52,6 @@ export default class Todos extends Component {
 
   render() {
     const { todoItems } = this.state;
-
     const elements = todoItems.map((item) => {
       const { id, title, isDid } = item;
       return (
@@ -69,17 +66,15 @@ export default class Todos extends Component {
     });
     return (
       <>
-      <div className="title-info">
-        <h1 className="title">To do list</h1>
-      <i><RiTodoLine className="icon-list"/></i>
-      </div>
-      
-       <Form onItemAdd={this.onItemAdd} />
-        <div className="todo-list">
-        {elements}
-      </div>
+        <div className="title-info">
+          <h1 className="title">To do list</h1>
+          <i>
+            <RiTodoLine className="icon-list" />
+          </i>
+        </div>
+        <Form onItemAdd={this.onItemAdd} />
+        <div className="todo-list">{elements}</div>
       </>
-       
     );
   }
 }

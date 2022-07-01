@@ -18,26 +18,22 @@ export default class ToDoList extends Component {
     const { checkbox } = this.state;
     const { title, deleteHandler } = this.props;
     return (
-      
-        
-          <li className={`todos ${checkbox ? "active" : ""}`}>
-            <span className="todo-count"></span>
-            <div className="todo-item">{title}</div>
-            <div className="action-icons">
-              <input
-                onChange={this.handleCheckboxChange}
-                className="complete-todo"
-                type="checkbox"
-              />
-              <IconContext.Provider value={{ className: "react-icon-trash" }}>
-                <button className="trash" onClick={deleteHandler}>
-                  {" "}
-                  <BsTrash />
-                </button>
-              </IconContext.Provider>
-            </div>
-          </li>
-      
+      <li className={`todos ${checkbox ? "active" : ""}`}>
+        <span className="todo-count"></span>
+        <div className="todo-item">{title}</div>
+        <div className="action-icons">
+          <input
+            onChange={this.handleCheckboxChange}
+            className="complete-todo"
+            type="checkbox"
+          />
+          <IconContext.Provider value={{ className: "react-icon-trash" }}>
+            <button className="trash" onClick={deleteHandler}>
+              <BsTrash />
+            </button>
+          </IconContext.Provider>
+        </div>
+      </li>
     );
   }
 }
