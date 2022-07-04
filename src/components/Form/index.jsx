@@ -33,7 +33,7 @@ export default class Form extends Component {
             onChange={this.handleChange}
             type="text"
             name="title"
-            placeholder="Your goal"
+            placeholder="Add your task..."
           />
           <button className="search-button" type="submit">
             <IconContext.Provider value={{ className: "react-icons" }}>

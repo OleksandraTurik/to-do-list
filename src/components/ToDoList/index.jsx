@@ -16,10 +16,11 @@ export default class ToDoList extends Component {
 
   render() {
     const { checkbox } = this.state;
-    const { title, deleteHandler } = this.props;
+    const { title, deleteHandler, count } = this.props;
+
     return (
       <li className={`todos ${checkbox ? "active" : ""}`}>
-        <span className="todo-count"></span>
+        <p className="todo-count">{count}</p>
         <div className="todo-item">{title}</div>
         <div className="action-icons">
           <input

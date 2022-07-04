@@ -1,40 +1,40 @@
 form {
-    background: rgb(235, 230, 230);
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 40%;
-    margin: 0 auto; 
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
+  background: rgb(235, 230, 230);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 
-  form input {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    width: 40%;
-    outline: none;
-    text-align: center;
-  }
+form input {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 40%;
+  outline: none;
+  text-align: center;
+}
 
-  .search-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background: rgb(179, 157, 219);
-    color: rgb(245, 222, 179);
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgb(179, 157, 219);
+  color: rgb(245, 222, 179);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .react-icons {
-    height: 35px;
-    width: 35px;
-    color: rgb(240, 248, 255);
-  }
+.react-icons {
+  height: 35px;
+  width: 35px;
+  color: rgb(240, 248, 255);
+}

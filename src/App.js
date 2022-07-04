@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import Todos from './components/Todos';
-import './App.css';
+import React, { Component } from "react";
+import Todos from "./components/Todos";
+
+import "./App.css";
 
 export default class App extends Component {
   render() {
@@ -8,7 +9,6 @@ export default class App extends Component {
       <div>
         <Todos />
       </div>
-    )
+    );
   }
 }
-

@@ -52,11 +52,13 @@ export default class Todos extends Component {
 
   render() {
     const { todoItems } = this.state;
-    const elements = todoItems.map((item) => {
+    const elements = todoItems.map((item, index) => {
       const { id, title, isDid } = item;
+
       return (
         <ul key={id}>
           <ToDoList
+            count={index + 1}
             title={title}
             isDid={isDid}
             deleteHandler={() => this.deleteHandler(id)}
