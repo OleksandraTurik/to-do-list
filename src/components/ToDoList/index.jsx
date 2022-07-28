@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BsTrash } from "react-icons/bs";
 import { IconContext } from "react-icons";
+import PropTypes from "prop-types";
 
 import "./style.css";
 
@@ -38,3 +39,9 @@ export default class ToDoList extends Component {
     );
   }
 }
+
+ToDoList.propTypes = {
+  title: PropTypes.string.isRequired,
+  deleteHandler: PropTypes.func.isRequired,
+  count: PropTypes.number.isRequired,
+};

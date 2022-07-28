@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Form from "../Form";
 import { RiTodoLine } from "react-icons/ri";
+import PropTypes from 'prop-types';
+import Form from "../Form";
 import ToDoList from "../ToDoList";
 
 import "./style.css";
@@ -29,9 +30,9 @@ export default class Todos extends Component {
 
   deleteHandler = (id) => {
     this.setState(({ todoItems }) => {
-      const filtredItems = todoItems.filter((item) => item.id !== id);
+      const filteredItems = todoItems.filter((item) => item.id !== id);
       return {
-        todoItems: filtredItems,
+        todoItems: filteredItems,
       };
     });
   };
@@ -79,4 +80,13 @@ export default class Todos extends Component {
       </>
     );
   }
+}
+
+Todos.propTypes = {
+  todoItems: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    isDid: PropTypes.bool,
+  }).isRequired,
+
 }
